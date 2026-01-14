@@ -19,11 +19,12 @@ def get_use_info():
             user_age = int(user_age)
             if 0<= user_age <= 150:
                 user_info['age'] = user_age
+                break
             else:
                 print("请输入0-150之间的年龄")
         except ValueError:
             print("请输入有效的数字")
-        return user_info
+    return user_info
 
 if __name__ == '__main__':
     user = get_use_info()
